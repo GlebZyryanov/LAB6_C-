@@ -1,0 +1,7 @@
+D:\Games\A_Programming\Troitskiy\LAB6_SEM3\bin\Debug\LAB6_SEM3.exe.config
+D:\Games\A_Programming\Troitskiy\LAB6_SEM3\bin\Debug\LAB6_SEM3.exe
+D:\Games\A_Programming\Troitskiy\LAB6_SEM3\bin\Debug\LAB6_SEM3.pdb
+D:\Games\A_Programming\Troitskiy\LAB6_SEM3\obj\Debug\LAB6_SEM3.csproj.AssemblyReference.cache
+D:\Games\A_Programming\Troitskiy\LAB6_SEM3\obj\Debug\LAB6_SEM3.csproj.CoreCompileInputs.cache
+D:\Games\A_Programming\Troitskiy\LAB6_SEM3\obj\Debug\LAB6_SEM3.exe
+D:\Games\A_Programming\Troitskiy\LAB6_SEM3\obj\Debug\LAB6_SEM3.pdb

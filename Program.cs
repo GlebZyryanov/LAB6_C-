@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+namespace LAB6_SEM3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			Console.WriteLine("Set the coordinates of Dot:");
+			Dot dot = new Dot(0, 0);
+			dot.setDot(dot);
+			Console.WriteLine("The coordinates of Dot is: ");
+			dot.getDot(dot);
+			Console.WriteLine("\nSet the coordinates of Otrezok:");
+			Otrezok O = new Otrezok(0, 0);
+			O.setOtrezok(O);
+			Console.WriteLine("The coordinates of Otrezok is: ");
+			O.getOtrezok(O);
+			Console.WriteLine("\nSet the coordinates of Triangle:");
+			Triangle T = new Triangle(0, 0);
+			T.setTriangle(T);
+			Console.WriteLine("The coordinates of Triangle is: ");
+			T.getTriangle(T);
+			Console.WriteLine("\nSet the coordinates of Squaer:");
+			Squaer S = new Squaer(0, 0);
+			S.setSquaer(S);
+			Console.WriteLine("The coordinates of Squaer is: ");
+			S.getSquaer(S);
+			Console.WriteLine("\nSet the coordinates of Pentagon:");
+			Pentagon P = new Pentagon(0, 0);
+			P.setPentagon(P);
+			Console.WriteLine("The coordinates of Pentagon is: ");
+			P.getPentagon(P);
+			Console.ReadLine();
+			
+		}
+	}
+}
