@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace LAB6_SEM3
 {
-    class Dot
-    {
-		private int CordX;
-		private int CordY;
+    struct Dot
+    {/// <summary>
+	 /// отличие структур и классов: структуры, указываемые в списке параметров метода, передаются по значению 
+	 /// (то есть копируются), объекты классов — по ссылке.
+	 /// </summary>
+		int CordX;
+		 int CordY;
 
 
 		public Dot(int initCordX, int initCordY)
