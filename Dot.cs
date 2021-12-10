@@ -11,9 +11,9 @@ namespace LAB6_SEM3
 	 /// отличие структур и классов: структуры, указываемые в списке параметров метода, передаются по значению 
 	 /// (то есть копируются), объекты классов — по ссылке.
 	 /// </summary>
-		int CordX;
-		 int CordY;
-
+		private int CordX;
+		private int CordY;
+		
 
 		public Dot(int initCordX, int initCordY)
 		{
@@ -26,9 +26,9 @@ namespace LAB6_SEM3
 		public Dot setDot(Dot point)
 		{
 
-			point.CordX = Convert.ToInt32(Console.ReadLine());
+			CordX = Convert.ToInt32(Console.ReadLine());
 
-			point.CordY = Convert.ToInt32(Console.ReadLine());
+			CordY = Convert.ToInt32(Console.ReadLine());
 			return point;
 		}
 		public void getDot(Dot point)

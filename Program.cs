@@ -17,7 +17,7 @@ namespace LAB6_SEM3
 			ThePerson.getFIO();
 
 			Console.WriteLine("Set the coordinates of Dot:");
-			Dot dot = new Dot(0, 0);
+			Dot dot = new Dot(1, 10);
 			dot.setDot(dot);
 			Console.WriteLine("The coordinates of Dot is: ");
 			dot.getDot(dot);
