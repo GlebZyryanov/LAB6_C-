@@ -8,8 +8,8 @@ namespace LAB6_SEM3
 {
     class Otrezok
     {
-		private Dot first;
-		private Dot second;
+		 private Dot first;
+		 private Dot second;
 
 
 		public Otrezok(int X, int Y)

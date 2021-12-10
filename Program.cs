@@ -11,10 +11,15 @@ namespace LAB6_SEM3
     {
         static void Main(string[] args)
         {	///////свойства для полей
+			///////////////////
+			//////////////
+			/////////////
+			///////////////
+			//////////////
 			ThePerson ThePerson = new ThePerson();
 			ThePerson.set();
 			ThePerson.printInfo();
-			ThePerson.getFIO();
+            ThePerson.getFIO();
 
 			Console.WriteLine("Set the coordinates of Dot:");
 			Dot dot = new Dot(0, 0);
