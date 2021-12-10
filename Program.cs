@@ -19,6 +19,7 @@ namespace LAB6_SEM3
 				ThePerson.set();
 				ThePerson.printInfo();
 				ThePerson.getFIO();
+				Console.ReadLine();
 			}
 			if (flag == 2)
 			{
