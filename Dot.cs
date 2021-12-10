@@ -12,26 +12,47 @@ namespace LAB6_SEM3
 		private int CordY;
 
 
-		public Dot(int initCordX, int initCordY)
+		public Dot(int initCordX, int initCordY)//this используется в классе dot
 		{
 
 
-			CordX = initCordX;
-			CordY = initCordY;
+			this.CordX = initCordX;
+			this.CordY = initCordY;
 
 		}
 		public Dot setDot(Dot point)
 		{
 
-			point.CordX = Convert.ToInt32(Console.ReadLine());
+			this.CordX = Convert.ToInt32(Console.ReadLine());
 
-			point.CordY = Convert.ToInt32(Console.ReadLine());
+			this.CordY = Convert.ToInt32(Console.ReadLine());
 			return point;
 		}
 		public void getDot(Dot point)
 		{
-			Console.WriteLine($"({point.CordX},{point.CordY})");
+			Console.WriteLine($"({this.CordX},{this.CordY})");
+		}
+		//перегрузка бинарного оператора +
+		public static Dot operator+(Dot a, Dot b)
+        {
+            Dot result = new Dot(0,0);
+		result.CordX = a.CordX + b.CordX;
+        result.CordY = a.CordY + b.CordY;
+
+		return result;
+        }
+
+		//перегрузка бинарного оператора ++
+		public static Dot operator ++(Dot a)
+		{
+		Dot result = new Dot(0,0);
+		result.CordX = a.CordX++;
+		result.CordY = a.CordY++;
+		
+
+		return result;
 		}
 
-	}
+
+}
 }
