@@ -10,12 +10,16 @@ namespace LAB6_SEM3
     {
 		private int CordX;
 		private int CordY;
-
+		private static int s_count=0;
+		public static int s_counter()
+        {
+			return s_count;
+        }
 
 		public Dot(int initCordX, int initCordY)//this используется в классе dot
 		{
 
-
+			s_count++;
 			this.CordX = initCordX;
 			this.CordY = initCordY;
 

@@ -7,10 +7,13 @@ using System.Threading;
 
 namespace LAB6_SEM3
 {
-    class Program
+	
+
+	class Program
     {
         static void Main(string[] args)
         {   ///////свойства для полей
+			
 			Console.WriteLine("1 - DEMO STRING\n2 - main prog\n3-ref and out func\n");
 			int flag = Convert.ToInt32(Console.ReadLine());
 			if (flag == 1)
@@ -69,6 +72,10 @@ namespace LAB6_SEM3
 				Console.WriteLine($"Число после метода с out: {numb}");
 				Console.ReadLine();
 			}
+			//демонстрация работы со статическими методами и полями
+			int numberofmethoddot = Dot.s_counter();
+			Console.WriteLine($"Количество вызовов метода initDot: { numberofmethoddot}");
+			Console.ReadLine();
 		}
 	}
 }
