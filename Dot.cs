@@ -16,14 +16,24 @@ namespace LAB6_SEM3
 			return s_count;
         }
 
+		public Dot()//конструктор без параметров
+        {
+			this.CordX = 0;
+			this.CordY = 0;
+        }
 		public Dot(int initCordX, int initCordY)//this используется в классе dot
-		{
+		{//конструктор с параметрами 
 
 			s_count++;
 			this.CordX = initCordX;
 			this.CordY = initCordY;
 
 		}
+		public Dot(int Param)
+        {
+			this.CordX = Param;
+			this.CordY = Param;
+        }
 		public Dot setDot(Dot point)
 		{
 

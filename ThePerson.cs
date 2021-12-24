@@ -82,6 +82,13 @@ namespace LAB6_SEM3
             surname = "Unknown";
             age = 0;
         }
+        public ThePerson(int age)
+        {
+            name = "Unknown";
+            patronymic = "Unknown";
+            surname = "Unknown";
+            this.age = age;
+        }
 
         public ThePerson(String name, String patronymic, String surname, int age)
         {

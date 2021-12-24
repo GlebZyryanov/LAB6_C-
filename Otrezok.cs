@@ -11,7 +11,16 @@ namespace LAB6_SEM3
 		 private Dot first;
 		 private Dot second;
 
-
+		public Otrezok()//конструктор без параметров
+        {
+			this.first = new Dot();
+			this.second = new Dot();
+        }
+		public Otrezok(int Param)//конструктор с параметрами 
+        {
+			this.first = new Dot(Param);
+			this.second = new Dot(Param);
+        }
 		public Otrezok(int X, int Y)
 		{//конструктор отрезка
 

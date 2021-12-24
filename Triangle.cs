@@ -9,6 +9,18 @@ namespace LAB6_SEM3
     class Triangle
     {
 		private Dot[] list = new Dot[3];
+		public Triangle()
+		{
+			this.list[0] = new Dot();
+			this.list[1] = new Dot();
+			this.list[2] = new Dot();
+		}
+		public Triangle(int Param)
+		{
+			this.list[0] = new Dot(Param);
+			this.list[1] = new Dot(Param);
+			this.list[2] = new Dot(Param);
+		}
 		public Triangle(int X, int Y)
 		{
 			this.list[0] = new Dot(X, Y);

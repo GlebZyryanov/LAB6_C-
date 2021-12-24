@@ -10,6 +10,20 @@ namespace LAB6_SEM3
     class Pentagon
     {
 		private Dot[] listP = new Dot[5];
+		public Pentagon(int Param)////Инициализация небольшого массива конструктором
+		{
+			for (int i = 0; i < 5; i++)
+			{
+				this.listP[i] = new Dot(Param);
+			}
+		}
+		public Pentagon()
+		{
+			for (int i = 0; i < 5; i++)
+			{
+				this.listP[i] = new Dot();
+			}
+		}
 		public Pentagon(int X, int Y)
 		{
 			for (int i = 0; i < 5; i++)

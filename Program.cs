@@ -14,7 +14,7 @@ namespace LAB6_SEM3
         static void Main(string[] args)
         {   ///////свойства для полей
 			
-			Console.WriteLine("1 - DEMO STRING\n2 - main prog\n3-ref and out func\n");
+			Console.WriteLine("1 - DEMO STRING\n2 - main prog\n3-ref and out func\n4 - Работа со статическими методами и полями\n5-Вызов всех конструкторов\n");
 			int flag = Convert.ToInt32(Console.ReadLine());
 			if (flag == 1)
 			{
@@ -72,10 +72,54 @@ namespace LAB6_SEM3
 				Console.WriteLine($"Число после метода с out: {numb}");
 				Console.ReadLine();
 			}
-			//демонстрация работы со статическими методами и полями
-			int numberofmethoddot = Dot.s_counter();
-			Console.WriteLine($"Количество вызовов метода initDot: { numberofmethoddot}");
-			Console.ReadLine();
+			if (flag == 4)
+			{//демонстрация работы со статическими методами и полями
+				int numberofmethoddot = Dot.s_counter();
+				Console.WriteLine($"Количество вызовов метода initDot: { numberofmethoddot}");
+				Console.ReadLine();
+			}
+			if(flag == 5)
+            {
+				//Демонстрация работы конструкторов
+				Dot dot;
+				dot = new Dot();
+				dot.getDot(dot);
+				dot = new Dot(99);
+				dot.getDot(dot);
+				dot = new Dot(1,1);
+				dot.getDot(dot);
+				Otrezok  o;
+				o = new Otrezok();
+				o.getOtrezok(o);
+				o = new Otrezok(99);
+				o.getOtrezok(o);
+				o = new Otrezok(1,1);
+				o.getOtrezok(o);
+				
+				Triangle T;
+				T = new Triangle();
+				T.getTriangle(T);
+				T = new Triangle(9);
+				T.getTriangle(T);
+				T = new Triangle(1,1);
+				T.getTriangle(T);
+
+				Squaer S;
+				S = new Squaer();
+				S.getSquaer(S);
+				S = new Squaer(99);
+				S.getSquaer(S);
+				S = new Squaer(1,1);
+				S.getSquaer(S);
+
+				Pentagon P;
+				P = new Pentagon();
+				P.getPentagon(P);
+				P = new Pentagon(99);
+				P.getPentagon(P);
+				P = new Pentagon(1, 1);
+				P.getPentagon(P);
+			}
 		}
 	}
 }
